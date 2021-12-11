@@ -1,5 +1,5 @@
 # mmiss
-R package to tabulate missing values and percentages
+R package to tabulate counts of missing values and percentages
 
 # Installation
 To be able to install the mmiss package, you need to type in the following commands in order in R.
