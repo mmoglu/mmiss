@@ -1,5 +1,5 @@
 # mmiss
-R package to tabulate counts of missing values and percentages
+R package to tabulate counts and percentages of missing values
 
 # Installation
 To be able to install the mmiss package, you need to type in the following commands in order in R.
@@ -7,6 +7,6 @@ To be able to install the mmiss package, you need to type in the following comma
 install.packages("devtools") #installs the devtools package
 ```
 ```
-install_github("mmoglu/mmiss") #installs the rvimp package
+install_github("mmoglu/mmiss") #installs the mmiss package
 ```
 
