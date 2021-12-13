@@ -14,7 +14,6 @@
 #' df
 #' mmiss(df)
 #' @export
-
 mmiss <- function(df){
   tot.num.dp = length(df)*nrow(df)
   tot.num.miss.dp = sum(is.na(df))
@@ -49,6 +48,4 @@ print.miss.data.frame <- function(d, ...){
   d["vars.pr.comp.dp",]=sprintf("%.1f%%", d["vars.pr.comp.dp",])
   print.data.frame(d, ...)
 }
-
-
 
