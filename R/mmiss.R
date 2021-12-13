@@ -14,6 +14,8 @@
 #' df
 #' mmiss(df)
 #' @export
+
+
 mmiss <- function(df){
   tot.num.dp = length(df)*nrow(df)
   tot.num.miss.dp = sum(is.na(df))
@@ -48,4 +50,24 @@ print.miss.data.frame <- function(d, ...){
   d["vars.pr.comp.dp",]=sprintf("%.1f%%", d["vars.pr.comp.dp",])
   print.data.frame(d, ...)
 }
+
+
+my_vec <- 1:5
+my_vec2 <- c(1:5,NA)
+
+v1 <- sample(my_vec, size = 10, replace = TRUE)
+v2 <- sample(my_vec2, size = 10, replace = TRUE)
+v3 <- sample(my_vec, size = 10, replace = TRUE)
+v4 <- sample(my_vec2, size = 10, replace = TRUE)
+df <- data.frame(v1,v2,v3,v4)
+df
+
+mmiss(df)  -> mdf
+print(mdf)
+print.data.frame(mdf)
+
+print.miss.data.frame(mdf)
+
+
+
 
